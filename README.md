@@ -1,18 +1,25 @@
-# Deploy an encrypted contract in <1m
+## ✅ Seismic Devnet Journey – by @teremno
 
-> Assumes you've completed the installation steps in the [developer testnet guide](https://docs.seismic.systems/appendix/deployments).
+This repository documents my full interaction with the Seismic Devnet, including contract deployment, CLI testing, and contract extension.
 
-Run this from `packages/contract/`:
+### 🔹 Deployed Contract: `Counter.sol`
+- Added a new `reset()` function to reset the counter to 0
+- Added an `Incremented(uint256)` event to log each increment
+- Successfully deployed the updated contract to Seismic Devnet
 
-```
-bash script/deploy.sh
-```
+### 🔹 CLI Interaction
+- Used `transact.sh` to simulate encrypted interactions with the contract
+- Validated encrypted state changes and visibility thresholds
 
-Run this from `packages/cli/`:
+### 🔹 Tools Installed (on WSL Ubuntu)
+- Rust, Bun, jq
+- Seismic Foundry tools (`sforge`, `sanvil`, `scast`, `ssolc`)
+- Full environment set up from scratch
 
-```
-bun install
-bash script/transact.sh
-```
+### 🔹 Activity Transparency
+All progress is tracked through commits in this repository for public visibility and accountability.
 
-Done!
+### 🔹 Next Steps
+- Add more advanced logic to the contract
+- Explore encrypted game flow with Walnut (when available)
+
